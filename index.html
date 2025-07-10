@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">AI Assistant</div>
+            <ul class="nav-links">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Actions</a></li>
+                <li><a href="#">Activity</a></li>
+            </ul>
+        </nav>
+        <main class="dashboard">
+            <div class="dashboard-grid">
+                <section class="chat-section card">
+                    <div class="chat-container">
+                        <div class="chat-messages"></div>
+                        <div class="chat-input-container">
+                            <input type="text" id="chat-input" placeholder="Type your message...">
+                            <button id="send-btn">Send</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="metrics-section card">
+                    <h2>Dashboard Metrics</h2>
+                    <div class="metric-item">
+                        <p>Active Users</p>
+                        <p>1,234</p>
+                    </div>
+                    <div class="metric-item">
+                        <p>API Calls</p>
+                        <p>56,789</p>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                </section>
+                <section class="quick-actions-section card">
+                    <h2>Quick Actions</h2>
+                    <button class="action-btn">Create New Task</button>
+                    <button class="action-btn">Generate Report</button>
+                    <div class="toggle-container">
+                        <p>Dark Mode</p>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </section>
+                <section class="activity-section card">
+                    <h2>User Activity</h2>
+                    <ul>
+                        <li>User 'JohnDoe' logged in.</li>
+                        <li>New task 'Design UI' created.</li>
+                        <li>Report 'Q2_2025' generated.</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
